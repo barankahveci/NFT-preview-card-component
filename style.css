@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --renk1: hsl(178, 100%, 50%);
+}
+body{
+    background: #0D1A2D;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container .box{
+    padding: 25px;
+    background-color: #15273D;
+    border-radius: 15px;
+}
+.container .box .main1{
+    max-width: 250px;
+    color: white;
+    position: relative;
+}
+.container .box .overlay i{
+    font-size: 40px;
+}
+
+
+
+.container .box .overlay{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    top: 0;
+    height: 72%;
+    border-radius: 10px;
+    width: 100%;
+    background: hsla(178, 100%, 50%, .5);
+    text-align: center;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.4s;
+    
+}
+.container .box .overlay:hover{
+    opacity: 1;
+}
+
+.container .box .main1 img{
+    width: 250px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: block;
+}
+.container .box .main1 h2{
+    padding-bottom: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    display: inline-block;
+    transition: all 0.4s;
+}
+.container .box .main1 h2:hover{
+    color: var(--renk1);
+    
+}
+.box .main1 p{
+    color: #8499B6;
+}
+.box .main2 {
+    display: flex;
+    margin-top: 20px;
+    border-bottom: 2px solid rgba(138, 165, 204, .1);
+    
+}
+.main2 p{
+    margin-right: auto;
+    font-size: 13px;
+}
+.main2 .fa-ethereum,.fa-clock{
+    margin-right: 5px;
+    font-size: 13px;
+}
+.main2 .fa-ethereum,.eth{
+    color: #0AF5F7;
+    font-size: 13px;
+}
+.main2 .fa-clock,.days{
+    color: rgb(138, 165, 204);
+    margin-bottom: 20px;
+}
+.box .footer{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+.box .footer img{
+    width: 30px;
+    height: 30px;
+    border-radius: 30rem;
+    border: 1px solid white;
+    
+}
+.container .box .footer p{
+    color: #8499B6;
+    
+}
+.container .box .footer span{
+    color: #fff;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.container .box .footer span:hover{
+    color: var(--renk1);
+}
